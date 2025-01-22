@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style>
+    .Payment {
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 55px;
+    background-color: rgb(201, 201, 230);
+    ;
+}
+
+label {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+body{
+    background-color: rgb(135, 165, 235);
+}
+</style>
+
+</head>
+<body>
+    <center>
+        <br>
+        <br><br><br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>        <div class="Payment" id="Payment">
+    
+            <label for="card-number">Card Number</label>
+            <input type="text" id="card-number" name="card-number" placeholder="1234 5678 9012 3456">
+    
+            <label for="expiry">Expiry Date</label>
+            <input type="text" id="expiry" name="expiry" placeholder="MM/YY">
+    
+            <label for="cvv">CVV</label>
+            <input type="text" id="cvv" name="cvv" placeholder="123">
+    
+            <label for="name">Name on Card</label>
+            <input type="text" id="name" name="name" placeholder="John Doe">
+    
+            <button type="submit">Pay Now</button>
+        </div>
+    </center>
+   
+
+
+</body>
+</html>

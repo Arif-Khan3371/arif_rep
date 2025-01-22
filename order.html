@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+   <link rel="stylesheet" href="arif.css">
+    <style>
+        .order{
+    text-align: center;
+    width: 100%;
+    height: 100vh;
+    padding: 70px 0;
+    background-image: url(bg2.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.order h1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #000;
+    font-size: 55px;
+}
+
+.order h1 span{
+    text-align: center;
+    color: violet;
+    margin-right: 15px;
+    font-family: mv boli;
+}
+
+.order h1 span::after{
+    content:'';
+    width: 100%;
+    height: 2px;
+    background: violet;
+    display: block;
+    position: relative;
+    bottom: 15px;
+}
+
+.order .order_main{
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.order .order_main .order_image img{
+    width: 600px;
+}
+
+.order .order_main form{
+    text-align: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 0 10px;
+}
+
+.order .order_main form p{
+    line-height: 25px;
+}
+
+.order .order_main form .input{
+    margin: 5px;
+}
+
+.order .order_main form .input input{
+    width: 300px;
+    height: 35px;
+    padding: 0 10px;
+    border: 2px solid #cccccc;
+    background: #eeeeee;
+    outline: none;
+    border-radius: 3px;
+}
+
+.order .order_main form .input input:focus{
+    border: 2px solid skyblue;
+}
+
+.order .order_main form .order_btn{
+    padding: 10px 0;
+    background: violet;
+    color: white;
+    text-align: center;
+    width: 40%;
+    text-align: center;
+    margin-top: 20px;
+    text-decoration: none;
+}
+
+
+    </style>
+</head>
+<body>
+  <div class="arif">
+        <div class="order" id="Order">
+            <h1> <span>Order</span>Now</h1>
+    
+            <div class="order_main">
+                        
+                  <div class="order_image">
+                      <img src="image/shoes.png" alt="">
+                  </div>
+                  <form action="#">
+                      <div class="input">
+                          <p>Name</p>
+                          <input type="text" placeholder="you name">
+                      </div>
+    
+                      <div class="input">
+                          <p>Email</p>
+                          <input type="email" placeholder="you email">
+                      </div>
+    
+                      <div class="input">
+                          <p>Number</p>
+                          <input  placeholder="you number">
+                      </div>
+    
+                      <div class="input">
+                          <p>How much</p>
+                          <input type="text" placeholder="How many order">
+                      </div>
+    
+                      <div class="input">
+                          <p>You Order</p>
+                          <input placeholder="shoes name">
+                      </div>
+    
+                      <div class="input">
+                          <p>Address</p>
+                          <input placeholder="you Address">
+                      </div>
+    
+                      <a href="payment.html" class="order_btn">Order Now</a>
+                  </form>
+            </div>
+      </div>
+  </div>
+</body>
+</html>
